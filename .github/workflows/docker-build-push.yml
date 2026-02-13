@@ -1,0 +1,18 @@
+name: Build and Push ETL Image to DockerHub
+
+on: # trigger
+    push:
+        branches: [ main ]
+
+    workflow_dispatch: # manual
+        
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: testing
+              run: 
+                echo "Hello World"
+                ls -ltr
+            
